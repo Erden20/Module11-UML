@@ -11,10 +11,12 @@
 
 Файлы `.puml` можно открыть онлайн через [PlantText](https://www.planttext.com/) или с помощью PlantUML, чтобы увидеть визуальные диаграммы.
 
- # Диаграмма классов
+## Диаграммы
+
+### Диаграмма классов
 
 ![Class Diagram](diagrams/png/ecommerce_class_diagram.png)
 
-# Диаграмма компонентов
+### Диаграмма компонентов
 
 ![Component Diagram](diagrams/png/logistics_component_diagram.png)
