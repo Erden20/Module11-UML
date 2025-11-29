@@ -15,8 +15,8 @@
 
 ### Диаграмма классов
 
-![Class Diagram](diagrams/png/ecommerce_class_diagram.png)
+![Class Diagram](diagrams/ecommerce_class_diagram.png)
 
 ### Диаграмма компонентов
 
-![Component Diagram](diagrams/png/logistics_component_diagram.png)
+![Component Diagram](diagrams/logistics_component_diagram.png)
