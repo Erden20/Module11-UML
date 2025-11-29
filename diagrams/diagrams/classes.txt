@@ -1,0 +1,57 @@
+1. Пользователь (User) — абстрактный класс
+
+Атрибуты: id, name, email, address, phone, role
+
+Методы: register(), login(), updateInfo()
+
+Наследники: Client, Admin
+
+2. Клиент (Client) — наследник User
+
+Атрибуты: loyaltyPoints
+
+Методы: viewOrders(), addReview()
+
+3. Администратор (Admin) — наследник User
+
+Методы: manageProducts(), viewLogs()
+
+4. Товар (Product)
+
+Атрибуты: id, name, description, price, stockQuantity, category
+
+Методы: create(), update(), delete()
+
+5. Заказ (Order)
+
+Атрибуты: id, createdDate, status, client, productList, totalAmount
+
+Методы: placeOrder(), cancelOrder(), pay()
+
+6. Платёж (Payment)
+
+Атрибуты: id, type, amount, status, date
+
+Методы: process(), refund()
+
+7. Доставка (Delivery)
+
+Атрибуты: id, address, deliveryStatus, courier
+
+Методы: send(), track(), complete()
+
+8. Отзыв (Review)
+
+Атрибуты: id, client, product, rating, comment
+
+Методы: add(), edit(), delete()
+
+💡 Отношения (ассоциации):
+
+Один клиент → много заказов
+
+Один заказ → один клиент, но много товаров (many-to-many)
+
+Товар → одна категория, но может быть в много заказов
+
+Заказ → одна доставка
