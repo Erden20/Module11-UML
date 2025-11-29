@@ -7,10 +7,6 @@
 - `diagrams/ecommerce_class_diagram.puml` — UML-диаграмма классов интернет-магазина.
 - `diagrams/logistics_component_diagram.puml` — UML-диаграмма компонентов системы логистики.
 
-## Инструкции
-
-Файлы `.puml` можно открыть онлайн через [PlantText](https://www.planttext.com/) или с помощью PlantUML, чтобы увидеть визуальные диаграммы.
-
 ## Диаграммы
 
 ### Диаграмма классов
