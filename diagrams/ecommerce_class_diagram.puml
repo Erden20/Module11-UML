@@ -1,0 +1,86 @@
+@startuml
+abstract class User {
+    +id
+    +name
+    +email
+    +address
+    +phone
+    +role
+    +register()
+    +login()
+    +updateInfo()
+}
+
+class Client {
+    +loyaltyPoints
+    +viewOrders()
+    +addReview()
+}
+
+class Admin {
+    +manageProducts()
+    +viewLogs()
+}
+
+class Product {
+    +id
+    +name
+    +description
+    +price
+    +stockQuantity
+    +category
+    +create()
+    +update()
+    +delete()
+}
+
+class Order {
+    +id
+    +createdDate
+    +status
+    +client
+    +productList
+    +totalAmount
+    +placeOrder()
+    +cancelOrder()
+    +pay()
+}
+
+class Payment {
+    +id
+    +type
+    +amount
+    +status
+    +date
+    +process()
+    +refund()
+}
+
+class Delivery {
+    +id
+    +address
+    +deliveryStatus
+    +courier
+    +send()
+    +track()
+    +complete()
+}
+
+class Review {
+    +id
+    +client
+    +product
+    +rating
+    +comment
+    +add()
+    +edit()
+    +delete()
+}
+
+User <|-- Client
+User <|-- Admin
+Order "1" *-- "1..*" Product
+Order "1" -- "1" Client
+Order "1" -- "1" Delivery
+Product --> "1" Category
+@enduml
